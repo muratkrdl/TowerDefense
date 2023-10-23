@@ -39,4 +39,10 @@ public class Bank : MonoBehaviour
         currentMoney -= costOfEnemyPassed;
         Debug.Log(currentMoney);
     }
+
+    public int GetCostOfTower()
+    {
+        return costOfTower;
+    }
+
 }

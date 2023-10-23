@@ -20,7 +20,7 @@ public class Waypoints : MonoBehaviour
     {
         if(isPlaceable)
         {
-            if(bank.currentMoney > 1)
+            if(bank.currentMoney >= bank.GetCostOfTower())
             {
                 Instantiate(towerPrefab, transform.position, Quaternion.identity);
                 isPlaceable = false;
